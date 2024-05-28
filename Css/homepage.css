@@ -1,0 +1,1066 @@
+/* ============= google Fonts Poppins Link ============ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ============== Nunito Sans google font =============== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* ==== Montserrat Font ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* === Jost Font === */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --header-background-color: ##181A1B;
+    --strip-secondary-color: #1F2123;
+    --primary-font-color: white;
+    --dropDown-content-Background-color: #181A1B;
+    --navigation-Menu-hover-color: rgb(119, 118, 118);
+    --main-section-background-color: #640207;
+    --background-color-btn-afterHover: white;
+    --text-primary-color-hover: #000;
+    --text-primary: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #fff !important;
+    overflow-x: hidden;
+}
+
+/*  ========= Header Css ========== */
+.header {
+    width: 100%;
+    background-color: var(--header-background-color);
+}
+
+.logoWithIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.header .logoWithIcons .socialIcons a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header .logoWithIcons .logo {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header .logoWithIcons .icons .MenuItems {
+    display: inline-block;
+    padding: 5px 0 10px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    color: #000;
+}
+
+/* ========== Navigation Bar ============= */
+.main-menu {
+    margin: 20px 0 16px 0;
+}
+
+.main-menu nav>ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.main-menu nav>ul li {
+    position: relative;
+}
+
+.main-menu nav>ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    color: #000;
+
+}
+
+.main-menu nav>ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+
+}
+
+.main-menu nav>ul li ul {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 170px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    z-index: 1;
+    text-align: center;
+}
+
+.main-menu nav>ul li ul li a {
+    color: #000;
+    padding: 5px 0px;
+    font-size: 16px;
+}
+
+
+
+/* ======== Strip ======== */
+
+.strip {
+    background-color: #F3F3F3;
+    padding: 20px 0;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.description h4 {
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.items .icon svg {
+    width: 20px;
+}
+
+/* =========== Carousel section Css Start ============ */
+
+.carousel {
+    width: 100%;
+}
+
+.image img {
+    height: 510px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel .container .text {
+    background-color: var(--main-section-background-color);
+    width: 50%;
+    height: 542px;
+}
+
+.container .image {
+    width: 50%;
+}
+
+.container .image img {
+    width: 100%;
+    height: 542px;
+}
+
+.carousel .text {
+    text-align: center;
+}
+
+.text .textAndHeadings {
+    line-height: 5rem;
+}
+
+.mainHeading {
+    font-size: 4rem;
+}
+
+.text .subtext2 {
+    margin-block-end: -14px;
+    font-size: 0.9rem;
+}
+
+.text .slogan {
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+}
+
+.text .button .btn {
+    padding: 10px 34px;
+    background-color: var(--dropDown-content-Background-color);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+.text .button .btn:hover {
+    background-color: #00ffff;
+    color: #fff;
+}
+
+/* ============= Carousel section Css Ends ============== */
+
+/* ============ All Product Section Css ============== */
+
+.allProduct {
+    padding: 30px 0;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.category h3 a {
+    color: #000;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding-top: 10px;
+    transition: all 0.5s;
+}
+
+.category h3 a:hover {
+    color: #00ffff;
+}
+
+.category h3:hover {
+    color: rgb(14, 193, 174);
+}
+
+/* Ensure the wishlist button is positioned correctly */
+.image-container {
+    position: relative;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.yith-wcwl-add-button {
+    font-size: 20px;
+    color: #ff0000;
+    /* Change the color as needed */
+    cursor: pointer;
+}
+
+.yith-wcwl-add-button i {
+    font-size: 20px;
+    color: #ff0000;
+    /* Change the color as needed */
+}
+
+
+/* ========= Utility Classes ============ */
+.forDisplay {
+    display: block;
+}
+
+.oneClass {
+    width: 170px;
+    border-radius: 50%
+}
+
+.CategoryName {
+    text-decoration: none;
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    color: var(--text-primary);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.CategoryName:hover {
+    color: var(--navigation-Menu-hover-color);
+}
+
+/* ========= Premium Design Section Css */
+
+.staticPicture {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.premium {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 60px 0;
+}
+
+.staticPicture>img {
+    display: block;
+    width: 100%;
+    /* margin-top: 60px; */
+}
+
+/* ============ Featured Collection Section ============== */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-card {
+    width: 300px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.discount-tag {
+    background-color: #000;
+    color: #ff0000;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sizes {
+    margin-top: 10px;
+}
+
+.sizes select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.product-img {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+}
+
+.product-img:hover img:nth-child(2) {
+    opacity: 0 !important;
+}
+
+.product-title {
+    color: #000;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.product-title h4 {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+
+}
+
+.product-slide {
+    margin: 0 15px;
+}
+
+.product-title p {
+    padding-top: 10px;
+}
+
+.product-title p strike {
+    color: #ff0000;
+}
+
+.size {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.sizing {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 9px;
+}
+
+#number-pad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translate(0, -78%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+ul.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: transparent;
+}
+
+.slick-prev {
+    left: -35px;
+}
+
+.slick-next {
+    right: -35px;
+}
+
+/* ====== Contact Us Page Css ======= */
+
+.map iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px 13px;
+    font-size: 18px;
+    border: 0;
+    background: #86868614;
+}
+
+.form-field textarea {
+    width: 100%;
+    resize: none;
+    height: 200px;
+    padding: 12px 13px;
+    font-size: 18px;
+    border: 0;
+    background: #86868614;
+}
+
+.form-field input[type='submit'] {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.form-field label {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.form-field {
+    margin-bottom: 18px;
+}
+
+#map {
+    position: relative;
+}
+
+.contact-heading {
+    text-align: center;
+    color: #fff;
+    margin: 60px 0 30px 0;
+}
+
+.contact-form {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.contact-heading {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.contact>h3 {
+    font-size: 24px;
+    text-align: start;
+    margin: 30px 0 20px 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.contact>p {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    margin: 30px 0 40px 0;
+}
+
+.contact ul li>span {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ==== Footer Css ==== */
+
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 50px 0;
+}
+
+.footer-content ul li a {
+    font-size: 14px;
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    transition: all .5s;
+}
+
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+}
+
+.footer-content form input {
+    width: 85%;
+    padding: 8px 15px;
+    margin-top: 13px;
+}
+
+.footer-content form button {
+    background: #000;
+    color: #fff;
+    padding: 8px 25px;
+    margin-top: 15px;
+}
+
+.footer-content ul li:hover a {
+    color: #00ffff;
+}
+
+.social-icons {
+    padding-top: 15px;
+}
+
+/* Testimonial Section CSS */
+
+.testimonial {
+    text-align: center;
+    padding: 10px 0;
+    transition: all .5s;
+    margin: 10px 0;
+}
+
+.testimonial .body {
+    font-size: 36px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.testimonial .rating ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.testimonial .rating ul li i {
+    color: #EBBF20;
+}
+
+.review-item__avatar-initial {
+    display: block;
+    background-color: #E6E6E6;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: 'Jost', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.author {
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.author p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.testimonial:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= All Product Css ======= */
+
+.allproduct-page {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container {
+    width: 300px;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+
+.rating ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating ul li i {
+    color: #EBBF20;
+}
+
+.overlay .button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 50px;
+}
+
+.image-container:hover .button {
+    opacity: 1;
+}
+
+.image-container:hover .left-button {
+    transform: translate(-100%, -50%);
+}
+
+.image-container .left-button:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.image-container .right-button:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.image-container:hover .right-button {
+    transform: translate(20%, -50%);
+}
+
+.image-container .icon {
+    position: absolute;
+    top: 10px;
+    /* Adjust the position as needed */
+    right: 10px;
+    /* Adjust the position as needed */
+    font-size: 15px;
+    /* Adjust the size of the icon */
+    background: rgba(11, 10, 10, 0.8);
+    /* Optional: add a semi-transparent background */
+    color: #fff;
+    padding: 5px;
+    /* Optional: add some padding */
+    border-radius: 50%;
+    /* Optional: make the background circle */
+    transition: color transform 0.3s ease, all 0.2s ease;
+}
+
+.image-container .icon:hover {
+    color: #ff0000;
+    /* Red color for the heart icon */
+    transform: scale(1.2)
+}
+
+/* ======= Single Product Page ======== */
+
+.single-product-image img {
+    width: 100%;
+}
+
+.image-gallery img {
+    width: 100%;
+}
+
+.single-product-page {
+    padding: 40px 0;
+}
+
+.single-product-info {
+    padding: 40px 0px;
+}
+
+.single-product-info p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.single-product-info .product-title p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text-align {
+    text-align: start;
+}
+
+.pt {
+    padding-top: 10px;
+}
+
+.single-product-info .checkout-buttons {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.single-product-info .checkout-buttons a {
+    padding: 12px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    background: #f30505;
+    display: inline-block;
+    color: #fff;
+    border-radius: 14px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Single Product page css */
+
+del {
+    color: #ff0000;
+    font-weight: 700;
+    opacity: 1 !important;
+}
+
+ins {
+    text-decoration: none;
+    color: #000;
+}
+
+h1.entry-title {
+    margin: 30px 0 10px 0;
+    padding-left: 20px;
+}
+
+form.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.woocommerce-product-details__short-description {
+    padding: 10px 0;
+}
+
+.single-product {
+    /* padding: 20px; */
+}
+
+.woocommerce div.product form.cart .button {
+    vertical-align: middle;
+    float: left;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.woocommerce div.product form.cart .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.yith-wcwl-wishlistexistsbrowse {
+    margin: 10px 0;
+}
+
+span.feedback {
+    font-size: 20px;
+}
+
+.woocommerce div.product div.summary {
+    margin-bottom: 2em;
+    position: relative;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, 15%);
+}
+
+i.yith-wcwl-icon.fa.fa-heart {
+    color: #ff0000;
+    font-size: 30px;
+}
+
+.yith-wcwl-wishlistexistsbrowse a {
+    text-decoration: none;
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.yith-wcwl-wishlistexistsbrowse a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div#product-172 {
+    padding: 25px;
+}
+
+.woocommerce span.onsale {
+    min-height: 3.236em;
+    min-width: 3.236em;
+    padding: .202em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: 0.5em;
+    left: 0.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: .857em;
+    z-index: 9;
+}
+
+.product_meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+span.sku_wrapper {
+    color: #8E8E8E;
+    font-size: 15px;
+}
+
+span.sku {
+    color: #000;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+span.posted_in {
+    color: #8E8E8E;
+    font-size: 15px;
+}
+
+span.posted_in a {
+    padding-left: 5px;
+    color: #000;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    border: none;
+    z-index: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0;
+    z-index: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+    left: 0;
+    border-bottom-right-radius: 0;
+    border-width: 0;
+    box-shadow: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-width: 0;
+    box-shadow: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+    clear: both;
+    padding: 20px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    background: #fff;
+    /* color: #515151; */
+    z-index: 2;
+    border-bottom-color: #fff;
+    font-size: 30px;
+    color: #000;
+}
+
+.woocommerce-Tabs-panel--description h2:nth-child(1) {
+    display: none;
+}
+
+h2.wp-block-heading {
+    margin-top: 10px;
+    color: #000;
+}
+
+.wp-block-heading strong {
+    color: #8E8E8E;
+}
